@@ -28,7 +28,7 @@ app.get('/getAllNews', function(req, res) {
 
 //AllEvents
 app.get('/getAllEvents', function(req, res) {	
-	console.log("chegou malandro2")
+	console.log("chegou malandro22")
 });
 
 //configuracao para aws
