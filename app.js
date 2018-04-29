@@ -22,13 +22,25 @@ app.use(function(err, req, res, next) {
 });
 
 //AllNews
-app.get('/getAllNews', function(req, res) {	
-	console.log("chegou malandro1")
+app.get('/getAllEvents', function(req, res) {	
+	var events = [
+				{titulo: 'Evento 1', descricao: 'Pequena descrição 1', data_inicio: '29/04/2018', data_fim: '30/04/2018', localizacao: 'Montevideo', valor: '100,00 reais', url_medias: '', url_links: ''},
+				{titulo: 'Evento 2', descricao: 'Pequena descrição 2', data_inicio: '10/12/2018', data_fim: '11/12/2018', localizacao: 'Limeira', valor: '100,50 reais', url_medias: '', url_links: ''},
+				{titulo: 'Evento 3', descricao: 'Pequena descrição 3', data_inicio: '05/05/2018', data_fim: '06/05/2018', localizacao: 'Campinas', valor: '35,00', url_medias: '', url_links: ''}
+				];	
+	res.json(events);
+    return;
 });
 
 //AllEvents
-app.get('/getAllEvents', function(req, res) {	
-	console.log("chegou malandro22")
+app.get('/getAllNews', function(req, res) {	
+	var news = [
+				{titulo: 'Publicação 1', descricao: 'Pequena descrição 1', data_criacao: '29/04/2018', url_medias: '', url_links: ''},
+				{titulo: 'Publicação 2', descricao: 'Pequena descrição 2', data_criacao: '10/12/2018', url_medias: '', url_links: ''},
+				{titulo: 'Publicação 1', descricao: 'Pequena descrição 3', data_criacao: '05/05/2018', url_medias: '', url_links: ''}
+				];	
+	res.json(news);
+    return;
 });
 
 //configuracao para aws
