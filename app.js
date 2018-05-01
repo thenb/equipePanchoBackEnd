@@ -24,7 +24,7 @@ app.use(function(err, req, res, next) {
 //AllNews
 app.get('/getAllNews', function(req, res) {	
 	var news = [
-				{titulo: 'Publicação 1', descricao: 'Pequena descrição 1', data_criacao: '29/04/2018', url_imagens: ['http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg','http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg'], url_videos: [], url_links: ['www.equipepancho.com'.'www.equipepancho.com']},
+				{titulo: 'Publicação 1', descricao: 'Pequena descrição 1', data_criacao: '29/04/2018', url_imagens: ['http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg','http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg'], url_videos: [], url_links: ['www.equipepancho.com','www.equipepancho.com']},
 				{titulo: 'Publicação 2', descricao: 'Pequena descrição 2', data_criacao: '10/12/2018', url_imagens: ['http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg','http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg'], url_videos: ['http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg','http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg'], url_links: ['www.equipepancho.com','www.equipepancho.com']},
 				{titulo: 'Publicação 1', descricao: 'Pequena descrição 3', data_criacao: '05/05/2018', url_imagens: [], url_videos: ['http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg','http://hortonhighschool.ca/wp-content/uploads/2017/10/News.jpg'], url_links: []}
 				];	
